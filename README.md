@@ -1,21 +1,21 @@
-# pc
+# 第一次电商项目
 
-> this is a vue pc client of shopping
+> 很久以前跟同学一起写的一个电商项目，当时做的时候没有很重视以至于名字都没起....，现在回过头看看，其中某些的代码水平不敢恭维。
+>
+> 因为是前后端分离的，我负责的是pc前端，后台代码去找同学拿结果说不见了.....，为了防止这种情况发生在我身上，我绝对还是上传到这里。
+>
+> 由于后台代码没有，那么接口肯定也是不能用的，如果各位有兴趣的话，可以根据代码结构来自己搭个后台
 
-## Build Setup
+## 用到的技术
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+1.  vue-cli 的基本创建于使用
+2.  element-ui 的基本使用
+3.  全局变量，全局组件和一些工具类的使用
+4.  浏览器的状态管理器
+5.  axios的封装
+6.  生成支付二维码
+7.  router 路由拦截
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+

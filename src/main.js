@@ -29,36 +29,12 @@ import '@/assets/toastr/toastr.min.css'
 
 Vue.config.productionTip = false
 const extend = Vue.prototype
-//使用Vuex状态管理器
-Vue.use(Vuex)
+
 Vue.use(element)
 
 extend.$post = fetch.post
 extend.$get = fetch.get
 extend.$form = fetch.form
-
-const store = new Vuex.Store({
-  state:{
-      keyword:'',
-      user:null,
-      cartCount:null,
-      cartProductId:null
-  },
-  mutations:{
-    setKeyword(state,keyword){
-      state.keyword = keyword
-    },
-    setUser(state,user){
-      state.user = user
-    },
-    setCartCount(state,cartCount){
-      state.cartCount = cartCount
-    },
-    setCartProductId(state,productId){
-      state.cartProductId = productId
-    }
-  }
-})
 
 
 //路由拦截
@@ -84,7 +60,6 @@ Vue.component('Footer',Footer);
 
 new Vue({
   el: '#app',
-  store,
   router,
   components: {App},
   template:'<App/>'
